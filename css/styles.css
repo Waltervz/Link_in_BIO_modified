@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.container{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+:root {
+    --main-violet: #8A2BE2;
+    --background-dark: rgb(34, 34, 34);
+    --secondary-violet: #9370DB;
+    --accent-1: #BA55D3;
+    --accent-2: #9400D3;
+    --light-contrast: #E6E6FA;
+    --complementary: #c5a909;
+}
+
+
+header {
+    
+    flex-direction: column;
+    max-width:300px;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding:0;
+    max-width:300px;
+    background-color:var(--background-dark);
+    color: var(--light-contrast);
+    flex-direction: column;
+}
+h1{
+    color: var(--main-violet);
+    padding-top: 2em;
+}
+#profile{
+    
+    border: 3px solid var(--main-violet);
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+ }
+
+
+.link-icon{
+  padding-top: 2em;
+justify-content: center;
+align-items: center;
+}
+.links {
+   
+    max-height: 100px;
+    font-family: "Roboto", sans-serif; ;
+   
+}
+.links div {
+    margin: 8px;
+
+}
+.links .box1{
+    margin-top: 1em;
+   
+}
+.links .box1,
+.links .box2,
+.links .box3,
+.links .box4 {
+    background-color: var(--main-violet);
+    color: var(--light-contrast);
+    text-align: center;
+    padding: 10px;
+    width: 14em;
+    cursor: pointer;
+    margin-bottom: 1em;
+    border:none;
+    border-radius: 25px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.links .box1:hover , .links .box2:hover, .links .box3:hover,.links .box4:hover{
+    background-color: var(--secondary-violet);
+    color: var(--background-dark);
+}
+footer{
+    margin-top: 200px;
+}
+ .contact  {
+    color: var(--complementary);
+    display: flex;
+    flex-direction: row ; 
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    max-width: 32px;
+    max-height: 32px;
+    cursor: pointer;  
+    padding-bottom: 1em;
+}
+
+
+.contact i:hover {
+    color: var(--accent-2);
+}
+
+.link-icon {
+    text-decoration: none; 
+}
+
